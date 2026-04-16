@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;ME•CODE Stories&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="manifest" href="/manifest.json"&gt;</p>
+<p class="p1">&lt;meta name="theme-color" content="#ff3e7f"&gt;</p>
+<p class="p1">&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</p>
+<p class="p1">&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;</p>
+<p class="p1">&lt;meta name="apple-mobile-web-app-title" content="Stories"&gt;</p>
+<p class="p1">&lt;link rel="apple-touch-icon" href="/icons/mecode_512.png"&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link rel="stylesheet" href="/css/style.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="wrap"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- LOGIN --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="page" id="pg-login"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="auth-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-logo"&gt;ME•CODE&lt;span&gt;Stories Generator&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="orn"&gt;— ✦ —&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="auth-title"&gt;Добро&lt;br&gt;&lt;strong&gt;пожаловать&lt;/strong&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="auth-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="f"&gt;&lt;label&gt;Email&lt;/label&gt;&lt;input type="email" id="login-email" placeholder="you@example.com"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="f"&gt;&lt;label&gt;Пароль&lt;/label&gt;&lt;input type="password" id="login-pw" placeholder="••••••"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="err-msg" id="login-err"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-pink" onclick="auth.doLogin()" id="login-btn"&gt;Войти →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-switch"&gt;Нет аккаунта? &lt;a onclick="app.showPage('pg-register')"&gt;Зарегистрироваться&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- REGISTER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="page" id="pg-register"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="auth-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-logo"&gt;ME•CODE&lt;span&gt;Stories Generator&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="orn"&gt;— ✦ —&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="auth-title"&gt;Создай&lt;br&gt;&lt;strong&gt;аккаунт&lt;/strong&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="auth-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="f"&gt;&lt;label&gt;Email&lt;/label&gt;&lt;input type="email" id="reg-email" placeholder="you@example.com"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="f"&gt;&lt;label&gt;Пароль&lt;/label&gt;&lt;input type="password" id="reg-pw" placeholder="Минимум 6 символов"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="err-msg" id="reg-err"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-pink" onclick="auth.doRegister()" id="reg-btn"&gt;Создать аккаунт →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-switch" style="margin-top:10px;font-size:11px;color:var(--muted)"&gt;Регистрируясь, вы принимаете &lt;a href="/oferta.html" target="_blank" style="color:var(--pink)"&gt;условия оферты&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-switch"&gt;Уже есть аккаунт? &lt;a onclick="app.showPage('pg-login')"&gt;Войти&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="auth-switch" style="margin-top:6px"&gt;&lt;a onclick="app.goGuest()"&gt;← Вернуться к генератору&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- CABINET --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="page" id="pg-cabinet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cab-top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="cab-email" id="cab-email"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-sm" onclick="auth.logout()"&gt;Выйти&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="status-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="status-row"&gt;&lt;span class="slbl"&gt;Статус&lt;/span&gt;&lt;span class="sval" id="cab-status"&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="status-row"&gt;&lt;span class="slbl"&gt;Генераций осталось&lt;/span&gt;&lt;span class="sval" id="cab-free"&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="status-row" id="cab-until-row" style="display:none"&gt;&lt;span class="slbl"&gt;Подписка до&lt;/span&gt;&lt;span class="sval" id="cab-until" style="font-size:14px"&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;label style="display:flex;align-items:flex-start;gap:8px;margin-top:14px;cursor:pointer;font-size:12px;color:var(--muted);font-weight:300;line-height:1.5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="checkbox" id="oferta-check-cab" style="margin-top:2px;accent-color:var(--pink);flex-shrink:0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Я принимаю &lt;a href="/oferta.html" target="_blank" style="color:var(--pink)"&gt;условия оферты&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="pay-btn" id="cab-pay-btn" onclick="app.startPayment('cab')" style="margin-top:8px"&gt;Оформить подписку — 199 ₽/мес →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="oferta-note" id="cab-pay-note" style="display:none"&gt;Безлимит на весь месяц ✦&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="oferta-note"&gt;&lt;a href="/oferta.html" target="_blank"&gt;Условия оферты&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="display:flex;gap:8px;margin-bottom:0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-pink" onclick="app.showPage('pg-app')" style="flex:1"&gt;Создавать сторис →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="background:var(--pink3);border:1px solid var(--pb);border-radius:2px;padding:16px 18px;margin-top:12px;text-align:center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-size:10px;letter-spacing:.3em;color:var(--pink);text-transform:uppercase;font-weight:600;margin-bottom:8px"&gt;Установить приложение&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-size:12px;color:var(--muted);font-weight:300;line-height:1.7;margin-bottom:12px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong style="color:var(--ink)"&gt;iPhone Safari:&lt;/strong&gt; нажми 􀈂 → «На экран Домой»&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong style="color:var(--ink)"&gt;Android Chrome:&lt;/strong&gt; меню ⋮ → «Установить приложение»</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button id="install-btn-cab" class="btn-sm" onclick="app.installPWA()" style="width:100%;padding:10px"&gt;+ Установить на экран&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hist-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="hist-title"&gt;История генераций&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="hist-list"&gt;&lt;div class="hist-empty"&gt;Загрузка…&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- APP --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="page on" id="pg-app"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="app-top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="app-logo"&gt;ME•CODE&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="app-top-right"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="counter" id="top-counter"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-sm" id="cab-btn" onclick="app.showPage('pg-cabinet')" style="display:none"&gt;Кабинет&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-sm" id="login-btn-top" onclick="app.showPage('pg-login')"&gt;Войти&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- STEP 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="scr on" id="sc1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="eyebrow"&gt;Stories Generator&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="hero-title"&gt;Сторис,&lt;br&gt;&lt;strong&gt;которые работают&lt;/strong&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inp-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input class="inp" type="text" id="niche" placeholder="Косметолог, астролог, мама-блогер…" maxlength="300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-go" onclick="app.analyzeNiche()" id="analyze-btn"&gt;→&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="err" id="err1"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="arch-card" id="arch-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="arch-ey"&gt;Архетип твоей аудитории&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="arch-name" id="arch-name"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="arch-why" id="arch-why"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="arch-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;&lt;span class="arch-lbl"&gt;Глубинная потребность&lt;/span&gt;&lt;div class="arch-val" id="arch-need"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;&lt;span class="arch-lbl"&gt;Теневой страх&lt;/span&gt;&lt;div class="arch-val" id="arch-fear"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;&lt;span class="arch-lbl"&gt;Визуальный код&lt;/span&gt;&lt;div class="arch-val" id="arch-visual"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;&lt;span class="arch-lbl"&gt;Вектор контента&lt;/span&gt;&lt;div class="arch-val" id="arch-vector"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hook-pill" id="arch-hook"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="sec-lbl" id="cats-label"&gt;Выбери тип сторис&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cats-grid" id="cats-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cat-card" onclick="app.pickCat(this,'sell')"&gt;&lt;span class="cat-icon"&gt;✦&lt;/span&gt;&lt;div class="cat-name"&gt;Продающие&lt;/div&gt;&lt;div class="cat-desc"&gt;Прямой оффер — конвертируем&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cat-card" onclick="app.pickCat(this,'warmup')"&gt;&lt;span class="cat-icon"&gt;◈&lt;/span&gt;&lt;div class="cat-name"&gt;Прогрев&lt;/div&gt;&lt;div class="cat-desc"&gt;Жизнь + продукт. Греем&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cat-card" onclick="app.pickCat(this,'life')"&gt;&lt;span class="cat-icon"&gt;✿&lt;/span&gt;&lt;div class="cat-name"&gt;Лайф&lt;/div&gt;&lt;div class="cat-desc"&gt;0% продаж. 100% доверия&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cat-card" onclick="app.pickCat(this,'expert')"&gt;&lt;span class="cat-icon"&gt;◇&lt;/span&gt;&lt;div class="cat-name"&gt;Экспертные&lt;/div&gt;&lt;div class="cat-desc"&gt;Знания и результаты&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="count-row" id="count-row" style="display:none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="count-pill sel" onclick="app.pickCount(this,3)"&gt;3 сторис&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="count-pill" onclick="app.pickCount(this,5)"&gt;5 сторис&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="count-pill" onclick="app.pickCount(this,7)"&gt;7 сторис&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-main" id="btn-next" onclick="app.goStep2()"&gt;Продолжить →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- STEP 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="scr" id="sc2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="back-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-ghost" onclick="app.goBack()"&gt;← Назад&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="cat-badge" id="cat-badge"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step2-title"&gt;Что рассказываем?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="step2-sub"&gt;Ситуация + цель + голос — остальное система сделает сама.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="fl"&gt;Ситуация или тема&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;textarea id="topic" placeholder="Спортзал, встреча с подругой, утренний ритуал…"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="fl"&gt;Цель &lt;span class="opt-tag"&gt;необязательно&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="goal" placeholder="Запись, покупка, подписка…"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="tone-lbl"&gt;Тональность&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tone-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tone-pill" onclick="app.pickTone(this,'ИГРИВЫЙ')"&gt;&lt;div class="tone-name"&gt;Игривый&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tone-pill" onclick="app.pickTone(this,'ЭКСПЕРТНЫЙ')"&gt;&lt;div class="tone-name"&gt;Экспертный&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tone-pill wide" onclick="app.pickTone(this,'ДРУЖЕЛЮБНЫЙ')"&gt;&lt;div class="tone-name"&gt;Дружелюбный&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="tone-special"&gt;Авторский стиль ✦&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tone-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tone-pill" onclick="app.pickTone(this,'МИРИ')"&gt;&lt;div class="tone-name"&gt;Мири&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tone-pill" onclick="app.pickTone(this,'ЕВА')"&gt;&lt;div class="tone-name"&gt;Ева&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="err" id="err2"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-main show" onclick="app.generate()" id="gen-btn" style="margin-top:10px"&gt;Создать сторис →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-restart" id="btn-restart" onclick="app.restartAll()"&gt;← Начать заново&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="reg-prompt" style="display:none;background:var(--s1);border:1px solid var(--s3);border-radius:2px;padding:28px 22px;text-align:center;margin-top:18px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:var(--ink);margin-bottom:10px"&gt;Бесплатные попытки закончились&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.7;margin-bottom:16px"&gt;Зарегистрируйся бесплатно&lt;br&gt;и получи ещё 3 генерации!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--pink);font-style:italic;margin-bottom:20px"&gt;+ 3 генерации бесплатно ✦&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-pink" onclick="app.showPage('pg-register')" style="margin-bottom:10px"&gt;Зарегистрироваться →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:12px;color:var(--muted);margin-top:8px"&gt;Уже есть аккаунт? &lt;a onclick="app.showPage('pg-login')" style="color:var(--pink);cursor:pointer"&gt;Войти&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="paywall" id="paywall"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="paywall-title"&gt;Бесплатные генерации закончились&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="paywall-sub"&gt;Оформи подписку и получи безлимитный доступ на весь месяц&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="paywall-price"&gt;199 ₽&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="paywall-period"&gt;в месяц · безлимит · отмена в любой момент&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label style="display:flex;align-items:flex-start;gap:8px;margin-bottom:10px;cursor:pointer;font-size:12px;color:var(--muted);font-weight:300;line-height:1.5;text-align:left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="checkbox" id="oferta-check-wall" style="margin-top:2px;accent-color:var(--pink);flex-shrink:0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Я принимаю &lt;a href="/oferta.html" target="_blank" style="color:var(--pink)"&gt;условия оферты&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="pay-btn" onclick="app.startPayment('wall')"&gt;Оформить подписку →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="oferta-note" style="margin-top:10px"&gt;&lt;a href="/oferta.html" target="_blank"&gt;Условия оферты&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="result-wrap" id="result-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="strategy-tag" id="strategy-tag"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="result-hero"&gt;&lt;div class="result-eye"&gt;Готово&lt;/div&gt;&lt;div class="result-heading"&gt;Твои сторис&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hook-block" id="hook-block" style="display:none"&gt;&lt;span class="hook-label"&gt;Hook&lt;/span&gt;&lt;div class="hook-text" id="hook-text"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stories-list" id="stories-list"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="post-block" id="post-block" style="display:none"&gt;&lt;span class="post-label"&gt;Пост / подпись&lt;/span&gt;&lt;div class="post-text" id="post-text"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cta-block" id="cta-block" style="display:none"&gt;&lt;span class="cta-label"&gt;CTA&lt;/span&gt;&lt;div class="cta-text" id="cta-text"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="result-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-action btn-regen" id="btn-regen" onclick="app.generate()"&gt;↻ Ещё вариант&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-action btn-copy-res" onclick="app.copyRes()"&gt;Скопировать&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;script src="/js/api.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="/js/auth.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="/js/app.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
